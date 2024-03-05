@@ -3,9 +3,18 @@ const { DataTypes } = require('sequelize');
 
 module.exports = function (sequelize) {
   const Address = sequelize.define('Address', {
-    province: DataTypes.STRING,
-    city: DataTypes.STRING,
-    street: DataTypes.STRING
+    province: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    street: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   }, {
   });
 
