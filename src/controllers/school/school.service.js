@@ -53,7 +53,6 @@ const SchoolService = (() => {
             })
             return school
         }
-
     }
     return new SchoolService()
 })()
